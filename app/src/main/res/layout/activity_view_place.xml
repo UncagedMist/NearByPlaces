@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPlaceActivity">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:src="@drawable/ic_image_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/places_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/place_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/places_address"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:text="@string/place_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/places_open_hour"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@string/open_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:max="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnShowMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_on_map"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                android:textStyle="italic"
+                app:fButtonColor="@android:color/transparent"
+                app:shadowColor="@android:color/transparent"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnViewDirection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/view_direction"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                android:textStyle="italic"
+                app:fButtonColor="@android:color/transparent"
+                app:shadowColor="@android:color/transparent"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

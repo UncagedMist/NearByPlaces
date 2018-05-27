@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NearByPlaces</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="hospital">Hospital</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="school">School</string>
+    <string name="market">Market</string>
+    <string name="title_activity_view_direction">Map</string>
+    <string name="view_direction">View Direction</string>
+    <string name="show_on_map">Show On Map</string>
+    <string name="open_now">Open Now :</string>
+    <string name="place_address">Place Address</string>
+    <string name="place_name">Place Name</string>
+</resources>
